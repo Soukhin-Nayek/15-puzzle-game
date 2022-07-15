@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        
+        <title>15-puzzle game</title>
+    </head>
+    <body class="body1">
+        <div class="body">
+            <h1 class="display-4">time:
+                <div id="time">
+                    
+                </div>
+                Moves:
+                <div id="move">
+                    
+                </div>
+            </h1>
+            <div class="game" id="game">
+                <div class="letsstart">lets start!!!</div>
+            </div>
+            <div class="btn">
+                <button class="button_play" onclick="start3X3()">
+                    3X3
+                </button>
+                <button class="button_play" onclick="start4X3()">
+                    4X3
+                </button>
+                <button class="button_play" onclick="start4X4()">
+                    4X4
+                </button>
+            </div>
+        </div>
+        <div id="items" class="items">
+            <h2 class="leaderheader">leaderboard</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">best time</th>
+                        <th scope="col">moves</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                </tbody>
+            </table>
+        </div>
+        <script type='text/javascript' src='js/index.js'></script>
+    </body>
+</html>
