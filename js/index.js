@@ -179,9 +179,9 @@ function startgame(){
         //if tile is clicked then only update the value
         if (clicked) {
             beep(0.17);
-            move+=1;
             console.log(index);
-            if (eligible(index, blktile)) {
+            if (eligible(index, blktile && index!=blktile)) {
+                move+=1;
                 console.log("eligible");
                 slidetile(index, blktile);
                 blktile = index;
