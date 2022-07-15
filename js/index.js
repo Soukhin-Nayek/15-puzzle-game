@@ -180,7 +180,7 @@ function startgame(){
         if (clicked) {
             beep(0.17);
             console.log(index);
-            if (eligible(index, blktile && parseInt(index) != parseInt(blktile))) {
+            if (eligible(index, blktile) && parseInt(index) != parseInt(blktile)) {
                 move+=1;
                 console.log("eligible");
                 slidetile(index, blktile);
